@@ -1,6 +1,9 @@
-.body{
+body{
+    
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f1f2f4;
 }
+
 
 .navbar {
     padding: 0.75rem 0 1rem 2.3rem ;
@@ -8,6 +11,7 @@
     display: flex;
     column-gap: 2.2rem;
     box-shadow: 0 0rem 0.3rem 0 rgba(0, 0, 0, 0.5);
+    background-color: #fff;
     
 }
 .navbar .search-bar{
@@ -135,4 +139,29 @@
 .navbar .helpcenter span{
     font-size: 1rem;
     padding: 0.1rem 0 0.5rem 0.5rem;
+}
+
+/* Categories Nav*/
+.categories{
+    display: block;
+    margin: 0.8rem 1rem;
+    
+}
+
+.disp-categories{
+    display: flex;
+    padding: 2rem 0 0 0;
+    background-color: #fff;
+    justify-content: space-evenly;
+    
+}
+
+.disp-categories li img{
+    display: block;
+    align-items:center ;
+}
+
+.disp-categories li a{
+    display: block;
+    text-align: center;
 }
