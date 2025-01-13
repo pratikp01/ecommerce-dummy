@@ -75,11 +75,28 @@
 
 .login-button:hover .login-content{
     display: block;
+    box-shadow: 0 0rem 0.7rem 0rem rgba(0, 0, 0, 0.5);
     
 }
 
-.login-content:hover a{
-    background-color: #fefefe;
+ .login-content li{
+    display: flex;
+    background-color: #fff;
+    z-index: 1;
+    color: inherit;
+    width: 10rem;
+    padding: 0.6rem 1rem;
+} 
+
+.login-content li a{
+    padding-top: 0.3rem;
+    padding-left: 0.5rem;
+    text-decoration: none;
+    color:black;
+}
+
+.login-content li:hover{
+    background-color: #f3f3f3;
 }
 
 /*Cart Classes*/
