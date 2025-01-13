@@ -1,13 +1,13 @@
-.homeicon{
-    font-family: 'Times New Roman', Times, serif;
+.body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .navbar {
-    padding: 0.75rem 0 1rem 3.6rem ;
+    padding: 0.75rem 0 1rem 2.3rem ;
     width: 100%;
     display: flex;
     column-gap: 2.2rem;
-    box-shadow: 0 0rem 0.5rem 0 rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0rem 0.3rem 0 rgba(0, 0, 0, 0.5);
     
 }
 .navbar .search-bar{
@@ -35,19 +35,87 @@
     padding: 0 0.3rem 0 0.6rem;
 }
 
+/*Login Main Class*/
+.navbar .login-button{
+    display: inline-block;
+    position: relative;
+    box-sizing: border-box;
+}
 .navbar .login-button button{
     display: flex;
-    border: solid;
     min-height: 2.5rem;
+    border-radius: 0.5rem;
+    background-color: #fff;
+    outline: none;
+    border: none;
+    width: 7rem;
 }
-
 .navbar .login-button span{
     font-size: 1rem;
     padding: 0.5rem 0 0.5rem 0.5rem;
+    
+}
+.login-button .drop-arrow{
+    padding-left: 0.7rem;
+}
+.login-button:hover .drop-arrow{
+    transition: transform .3s ease-in-out;
+    transform: rotate(180deg);
+    padding-right: 0.7rem;
+}
+.login-button button:hover{
+    background-color: #2956e7;;
+}
+/*Login Dropdown*/
+.login-button .login-content{
+    display: none;
+    position: absolute;
+    
 }
 
+.login-button:hover .login-content{
+    display: block;
+    
+}
 
+.login-content:hover a{
+    background-color: #fefefe;
+}
 
-.login-content{
-    display: none
+/*Cart Classes*/
+.navbar .cart{
+    display: flex;
+    padding: 0.5rem 0;
+}
+
+.navbar .cart button{
+    display: flex;
+    border-radius: 0.5rem;
+    background-color: #fff;
+    border: none;
+    width: 7rem;
+    height: 1.6rem;
+}
+.navbar .cart span{
+    font-size: 1rem;
+    padding: 0.1rem 0 0.5rem 0.5rem;
+}
+
+/*Helpcenter Classes*/
+.navbar .helpcenter{
+    display: flex;
+    padding: 0.4rem 0 0 0;
+
+}
+
+.navbar .helpcenter button{
+    display: flex;
+    border-radius: 0.5rem;
+    background-color: #fff;
+    border: none;
+    height: 1.6rem;
+}
+.navbar .helpcenter span{
+    font-size: 1rem;
+    padding: 0.1rem 0 0.5rem 0.5rem;
 }
